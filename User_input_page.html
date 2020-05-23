@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "UTF-8">
+ <meta name = "description" content = "Nutritious Diet Plan for Customers">
+ <meta name = "keywords" content = "Nutrition, Diet, Food, Exercise">
+ <meta name = "author" content = "Sahil Raina">
+ <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+ 
+
+<title> User input page </title>
+<link rel = "stylesheet" href ="style.css">
+<style> 
+body{
+ background-color: #fee2b3
+}
+
+h1{
+text-align: center;
+background-color: white;
+}
+
+.information{
+margin: 50px 100px 100px 100px;
+font-size: 20px;
+text-align: center;
+background-color: #edffea;
+padding: 100px;
+width: 1000px;
+}
+label{
+
+padding: 5px;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<h1> Customer Information </h1>
+<div class = "information" >
+<form>
+
+Bodyweight:
+<input type = "number"  name = "bodyweight" min = "30" max = "200" padding = 50px>
+<label> Units </label>
+<select name="units" id="units">
+    <option value="kg">Kilograms</option>
+    <option value="pounds">Pounds</option>
+  </select>
+<br>
+<br>
+<br>
+Height:
+<input type = "number" name = "height" min = "100" max = 190" padding = 50 px>
+<label> Units </label>
+<select name="units" id="units">
+    <option value="m">Meters</option>
+    <option value="cm">Centimeters</option>
+	<option value="inch">Inches</option>
+    <option value="ft">Feet</option>
+  </select>
+<br>
+<br>
+<br>
+BMI:
+<input type = "submit" value = "Calculate"> <br>
+
+</form>
+</div>
+
+</body>
+
+</html>
