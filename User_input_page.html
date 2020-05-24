@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
   body{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('salad.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('nutri.jpg');
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -57,8 +57,8 @@
     <form>
 
       <strong>Weight:</strong>
-      <input type = "number" class="weight" name = "weight" min = "30" max = "200" padding = 50px>
-      <select class="weight_units" >
+      <input type="text" id="weight" class="weight" name = "weight" min = "30" max = "200" padding = 50px>
+      <select type="multiple" id="heightunits" >
         <option value="kg">Kilograms</option>
         <option value="pounds">Pounds</option>
       </select>
@@ -66,44 +66,24 @@
       <br>
       <br>
       <strong>Height:</strong>
-      <input type = "number" class ="height" name = "height" min = "100" max = "190" padding = 50 px>
-      <select class="height_units" >
+      <input type="text" id="height" class ="height" name = "height" min = "100" max = "190" padding = 50 px>
+      <select type="multiple" id="weightunits" >
         <option value="m">Meters</option>
-        <option value="cm">Centimeters</option>
+        
         <option value="inch">Inches</option>
       </select>
       <br>
       <br>
       <br>
-      <input  type="button" value="Calculate" onclick =" bmiCalculator();"class="btn btn-outline-dark"></input> <br>
-
+      <input type="button" value="Calculate" onclick="computeBMI();"class="btn btn-outline-dark"></input> <br>
     </form>
-  </div>
-  <script src="user-input.js" charset="utf-8"></script>
-  <div id="resultDiv"></div>
-  <!-- <script type="text/javascript">
-
-  function bmiCalculator(weight, height,weight_units, height_units){
-    var output;
-    if(weight_unit==='pounds'){
-      weight=weight/2.205;
-      if (height_units==='cm'){
-        height = height/100 ;
-      }
-    }
-    else if (weight_unit==='kg'){
-      if (height_units==='cm'){
-        height = height/100 ;
-      }
-    }
-    bmiNumber = Math.round(weight/Math.pow(height,2));
-
-    document.getElementByClass('information').innerHTML = output;
-  }
-</script> -->
-<!-- <div class="output">
-
-</div> -->
+    <br>
+    <p id="output" >
+    <p id="comment" >
+    </p>
+  </p>
+</div>
+<script src="user-input.js"></script>
 </body>
 
 </html>
