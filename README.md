@@ -9,3 +9,5 @@ This is a website that aims at providing the customers a well-researched diet pl
 |2|Sahil Raina|
 |3|Gaganrajdeep Singh|
 |4|Sabyasachi|
+
+Website hosted at : https://nikitabhardwaj.github.io/nutridiet/
