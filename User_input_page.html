@@ -9,8 +9,9 @@
  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
  
 
-<title>NutriDiet:BMI Calculator </title>
+<title>NutriDiet</title>
 <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style> 
 body{
  	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('nutri.jpg');
@@ -22,19 +23,21 @@ body{
 h1{
 text-align: center;
 color: white;
+font-family: "Roboto", sans-serif;
 
 }
 
 .information{
-margin: 50px 100px 100px 50px;
+margin: 50px;
 font-size: 20px;
 text-align: center;
 background-color: #edffea;
 padding: 100px;
 width: 1000px;
+text-align: center;
 }
-label{
 
+label{
 padding: 5px;
 
 }
@@ -43,8 +46,8 @@ padding: 5px;
 </head>
 
 <body>
-
-<h1> BMI Calculator </h1>
+<br>
+<h1> BMI Calculator and Diet Finder </h1>
 <div class = "information" >
 <form>
 
@@ -59,7 +62,7 @@ Bodyweight:
 <br>
 <br>
 Height:
-<input type = "number" name = "height" min = "100" max = 190 padding = 50 px>
+<input type = "number" name = "height" min = "100" max = "190" padding = 50 px>
 <label> Units </label>
 <select name="units" id="units">
     <option value="m">Meters</option>
@@ -70,8 +73,7 @@ Height:
 <br>
 <br>
 <br>
-BMI:
-<input type = "submit" value = "Calculate"> <br>
+<button type="button" class="btn btn-outline-warning">Calculate</button> <br>
 
 </form>
 </div>
