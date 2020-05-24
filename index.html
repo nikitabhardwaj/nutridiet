@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>NutriDiet</title>
-	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="logo">
-		<img src="logo.png" width=20% height=20%>
-	</div>
-<br>
-<br>
-<br>
-<br>
-	<div class="login-page">
-	<div class="form">
-		<form class="register-form">
-			<input type="text" placeholder="Email id">
-			<br> 
-			<input type="password" placeholder="Password">
-			<input type="password" placeholder="Re-enter Password">
-			<br>
-			<br>
-			<botton> Create</botton>
-			<br> 
-			<br>
-			<p class="message"> Already Registered? <a href="#"> Login</a>
-			</p>
-		</form>
-		<form>
-			<form class="login-page">
-			<input type="text" placeholder="Email id">
-			<input type="password" placeholder="Password">	
-			<br>
-			<br>
-			<botton> Login</botton>
-			<br>
-			<br>
-			<p class="message"> Not Registered? <a href="#"> Register</a>
-			</p>
-		</form>
-	</div>
-</form>
-</div>
-</form>
-<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<html class="text-light">
 
-<script>
-	$('.message a').click(function(){
-		$('form').animate({height:"toggle", opacity:"toggle"}, "slow");
-	})
-</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="text-capitalize wobble animated register-photo">
+        <div class="form-container"><div class="image-holder" src=""></div>
+            <form data-bs-hover-animate="tada" method="post">
+                <h2 class="text-center"><strong>Create</strong> an account.</h2>
+                <div class="form-group"><input class="border-dark form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="border-dark form-control" type="password" name="password" placeholder="Password"></div>
+                <div class="form-group"><input class="border-dark form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                </div>
+                <div class="form-group"><button class="btn btn-primary btn-block text-white border-dark shadow-sm" data-bs-hover-animate="pulse" type="submit" style="filter: blur(0px) grayscale(8%) invert(0%);">Sign Up</button></div><a class="already" href="#">You already have an account? Login here.</a></form>
+        </div>
+    </div><div class="border-primary social-icons" style="background-color: #ffc0cb;"><b><h3>Connect with us</h3><b><br>
+    <a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
+
 </html>
