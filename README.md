@@ -11,7 +11,6 @@ This is a website that aims at providing the customers a well-researched diet pl
 |4|Sabyasachi|
 
 Website hosted at : https://nikitabhardwaj.github.io/nutridiet/
-Text
 
 As unhealthy lifestyle and health-related problems are are becoming a global challenge for the world, we thought to change this pattern and to help people live a healthier lifestyle. Therefore, we have created a website that will help our customers to be presented with a nutritious and healthy diet plan, depending on their present health conditions and diet. We learnt a lot together as a team about website development and collaboration. 
 
