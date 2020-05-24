@@ -1,5 +1,5 @@
 body{
-	background-color: #fee2b3;
+	background-image:url('nutri.jpg');
 	height: 100%;
 }
 .login-page{
@@ -34,7 +34,7 @@ body{
 	background: rgba(7,40,195,0.8);
 	width:100%;
 	border:0;
-	padding: 15px;
+	padding: 10px;
 	color: #FFFFFF;
 	font-size: 14px;
 	cursor: pointer;
