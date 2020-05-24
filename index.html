@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>NutriDiet</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="login-page">
+	<div class="form">
+		<form class="register-form">
+			<input type="text" placeholder="Email id">
+			<input type="password" placeholder="Password">
+			<input type="password" placeholder="Re-enter Password">
+			<botton> Create</botton>
+			<p class="message"> Already Registered? <a href="#"> Login</a>
+			</p>
+		</form>
+		<form>
+			<form class="login-page">
+			<input type="text" placeholder="Email id">
+			<input type="password" placeholder="Password">	
+			<botton> Login</botton>
+			<p class="message"> Not Registered? <a href="#"> Register</a>
+			</p>
+		</form>
+	</div>
+	</div>
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+<script>
+	$('.message a').click(function(){
+		$('form').animate({height:"toggle", opacity:"toggle"}, "slow");
+	})
+</script>
+</body>
+</html>
